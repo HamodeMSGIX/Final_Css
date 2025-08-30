@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lexend Deca", sans-serif;
+}
+body {
+  background-color: #111827;
+  color: #e0e0e0;
+}
+nav {
+  background-color: #060a13;
+  display: flex;
+  padding: 20px 100px;
+  justify-content: space-between;
+  align-items: center;
+}
+ul {
+  display: flex;
+  gap: 30px;
+}
+ul li {
+  list-style: none;
+}
+h2 {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 24px;
+}
+a {
+  text-decoration: none;
+  color: #b0b0b0;
+  font-weight: 500;
+}
+a:hover {
+  color: #ffcc00;
+}
+a .home {
+  color: #ffffff;
+  font-weight: 700;
+}
+strong,
+h3 {
+  color: #ffcc00;
+}
+h3 {
+  padding-bottom: 20px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+h1 {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+section {
+  margin: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px;
+}
+p {
+  width: 450px;
+  color: #b0b0b0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.8;
+  margin-bottom: 25px;
+}
+img {
+  border-radius: 20px;
+  width: 320px;
+  height: 320px;
+}
+.contact-btn {
+  background-color: #ffcc00;
+  color: #121212;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 30px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 25px;
+}
+.contact-btn:hover {
+  background-color: #e6b800;
+}
+.profile-image img {
+  border-radius: 20px;
+  width: 320px;
+  height: 320px;
+}
+.about_me {
+  font-size: 42px;
+  font-weight: 700;
+  padding-bottom: 20px;
+  margin-top: 179px;
+  margin-left: 600px;
+  color: #ffffff;
+}
