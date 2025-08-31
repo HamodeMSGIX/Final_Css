@@ -1,84 +1,79 @@
 @import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@400;700&display=swap");
+
+/* --- root --- */
+:root {
+  --background-color: #111827;
+  --nav-color: #060a13;
+  --text-color: #e0e0e0;
+  --link-color: #b0b0b0;
+  --link-hover-color: #ffcc00;
+  --highlight-color: #ffffff;
+  --button-color: #ffcc00;
+  --button-hover-color: #e6b800;
+  --background-secondary-color: #020617;
+  --image-size: 427px;
+  --border-radius: 20px;
+}
+
+/* --- (Global Styles) --- */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Lexend Deca", sans-serif;
 }
+
 body {
-  background-color: #111827;
-  color: #e0e0e0;
+  background-color: var(--background-color);
+  color: var(--text-color);
 }
+
+a {
+  text-decoration: none;
+  color: var(--link-color);
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--link-hover-color);
+}
+
+img {
+  width: var(--image-size);
+  height: var(--image-size);
+  border-radius: var(--border-radius);
+}
+
+/* --- (Layout Components) --- */
 nav {
-  background-color: #060a13;
+  background-color: var(--nav-color);
   display: flex;
   padding: 20px 100px;
   justify-content: space-between;
   align-items: center;
 }
-ul {
+
+nav ul {
   display: flex;
   gap: 30px;
 }
-ul li {
+
+nav ul li {
   list-style: none;
 }
-h2 {
-  color: #ffffff;
-  font-weight: 700;
-  font-size: 24px;
+
+.highlight-link {
+  color: var(--highlight-color);
 }
-a {
-  text-decoration: none;
-  color: #b0b0b0;
-  font-weight: 500;
+
+.profile-image img {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
-a:hover {
-  color: #ffcc00;
-}
-a .home {
-  color: #ffffff;
-  font-weight: 700;
-}
-strong,
-h3 {
-  color: #ffcc00;
-}
-h3 {
-  padding-bottom: 20px;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.5;
-  margin-bottom: 15px;
-}
-h1 {
-  font-size: 40px;
-  font-weight: 700;
-  margin-bottom: 20px;
-}
-section {
-  margin: 80px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 60px;
-}
-p {
-  width: 450px;
-  color: #b0b0b0;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.8;
-  margin-bottom: 25px;
-}
-img {
-  border-radius: 20px;
-  width: 320px;
-  height: 320px;
-}
+
 .contact-btn {
-  background-color: #ffcc00;
-  color: #121212;
+  background-color: var(--button-color);
+  color: var(--background-color);
   border: none;
   border-radius: 8px;
   padding: 12px 30px;
@@ -86,20 +81,103 @@ img {
   font-weight: 600;
   cursor: pointer;
   margin-top: 25px;
+  transition: background-color 0.3s ease;
 }
+
 .contact-btn:hover {
-  background-color: #e6b800;
+  background-color: var(--button-hover-color);
 }
-.profile-image img {
-  border-radius: 20px;
-  width: 320px;
-  height: 320px;
+
+/* --- (Headings & Paragraphs) --- */
+h1 {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: var(--highlight-color);
 }
+
+h2 {
+  color: var(--highlight-color);
+  font-weight: 700;
+  font-size: 24px;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-bottom: 15px;
+  padding-bottom: 20px;
+  color: var(--link-hover-color);
+}
+
+p {
+  max-width: 450px;
+  color: var(--link-color);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.8;
+  margin-bottom: 25px;
+}
+
+strong {
+  color: var(--link-hover-color);
+}
+
+/* --- (Sections) --- */
+section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 100px;
+}
+
+.about-content {
+  position: relative;
+  right: 120px;
+}
+
 .about_me {
   font-size: 42px;
   font-weight: 700;
-  padding-bottom: 20px;
-  margin-top: 179px;
-  margin-left: 600px;
-  color: #ffffff;
+  padding: 80px 0 20px 0;
+  text-align: center;
+}
+
+.about-section {
+  padding: 60px 100px;
+  background-color: var(--background-secondary-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* --- (About Image with Responsive Border) --- */
+.about-image {
+  position: relative;
+  display: inline-block;
+}
+
+.about-image::before {
+  content: "";
+  position: absolute;
+  top: 1.5vw;
+  left: 7.5vw;
+  width: 100%;
+  height: 100%;
+  border: 0.8vw solid var(--button-color);
+  border-radius: var(--border-radius);
+  z-index: 0;
+}
+
+.about-image img {
+  border-radius: var(--border-radius);
+  width: var(--image-size);
+  height: auto;
+  position: relative;
+  left: 155px;
+  z-index: 1;
+  display: block;
+  border: none;
+  box-shadow: none;
 }
