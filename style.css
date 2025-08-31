@@ -181,3 +181,64 @@ section {
   border: none;
   box-shadow: none;
 }
+
+.services-section {
+  padding-top: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  background-color: var(--background-color);
+}
+
+.services-header {
+  display: block;
+  padding-left: 165px;
+  padding-top: 96px;
+}
+.services-header h2 {
+  margin-top: 20px;
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--highlight-color);
+}
+
+.services-header p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: var(--link-color);
+  margin: 0px;
+}
+
+.services-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  padding-left: 165px;
+  padding-top: 56px;
+}
+
+.service-card {
+  background-color: var(--background-secondary-color);
+  border-radius: var(--border-radius);
+  text-align: center;
+  padding: 32px;
+  width: 350px;
+  height: 340px;
+}
+
+.service-card h3 {
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--highlight-color);
+  margin: 15px 0;
+}
+
+.service-card p {
+  font-size: 14px;
+  color: var(--link-color);
+}
+
+.service-icon {
+  font-size: 40px;
+  color: var(--button-color);
+  margin-bottom: 15px;
+}
