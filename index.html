@@ -5,13 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fainal_Css</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
       <nav>
-        <a href="#"
-          ><h2>About<strong>Me.</strong></h2></a
-        >
+        <a href="#"><h2>About<strong>Me.</strong></h2></a>
         <ul>
           <li><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
@@ -23,73 +25,205 @@
         </ul>
       </nav>
     </header>
-    <section>
-      <div class="profile">
-        <h3>Hello, Welcome</h3>
-        <h1>I am Anderson Coper</h1>
+
+    <main>
+      <section class="hero-section">
+        <div class="profile">
+          <h3>Hello, Welcome</h3>
+          <h1>I am Anderson Coper</h1>
+          <p>
+            There are many variations of passages of Lorem Ipsum available, but
+            the majority have suffered alteration in some form, by injected
+            humour.
+          </p>
+          <button class="contact-btn">Contact us</button>
+        </div>
+        <div class="image">
+          <img src="./images/my_image.jpg" alt="My image" />
+        </div>
+      </section>
+
+      <section class="about-section" id="about">
+        <div class="about-image">
+          <img src="./images/about_image.png" alt="About me" />
+        </div>
+        <div class="about-content">
+          <h2>About <strong>Me</strong></h2>
+          <p>
+            There are many variations of<br />
+            passages of Lorem Ipsum available<br />, but the majority have
+            suffered<br />
+            alteration in some.
+          </p>
+          <p>
+            Passages of Lorem Ipsum available, but the majority have suffered
+            alteration in some form, by injected humour.
+          </p>
+          <button class="contact-btn">Contact us</button>
+        </div>
+      </section>
+
+      <section class="services-section" id="services">
+        <div class="services-header">
+          <h2>My <strong>Service</strong></h2>
+          <p>
+            There are many variations of<br />
+            passages of Lorem Ipsum available<br />, but the majority have
+            suffered<br />
+            alteration in some.
+          </p>
+        </div>
+        <div class="services-container">
+          <div class="service-card">
+            <span class="fas fa-bullhorn service-icon"></span>
+            <h3>
+              Digital<br />
+              Marketing
+            </h3>
+            <p>
+              There are many variations of,<br />
+              passages of Lorem Ipsum available<br />
+              but the majority have suffered<br />
+              alteration in some form.
+            </p>
+          </div>
+          <div class="service-card">
+            <span class="fas fa-briefcase service-icon"></span>
+            <h3>
+              Web<br />
+              Development
+            </h3>
+            <p>
+              There are many variations of,<br />
+              passages of Lorem Ipsum available<br />
+              but the majority have suffered<br />
+              alteration in some form.
+            </p>
+          </div>
+          <div class="service-card">
+            <span class="fas fa-bezier-curve service-icon"></span>
+            <h3>
+              Creative<br />
+              Graphic Design
+            </h3>
+            <p>
+              There are many variations of,<br />
+              passages of Lorem Ipsum available<br />
+              but the majority have suffered<br />
+              alteration in some form.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="portfolio-section">
+        <div class="portfolio-header">
+          <h2>My <strong>Portfolio</strong></h2>
+          <p>
+            There are many variations of passages of Lorem Ipsum available, but
+            the majority have suffered alteration in some form, by injected
+            humour.
+          </p>
+        </div>
+        <div class="portfolio-container">
+          <div class="portfolio-item">
+            <img src="./images/portfolio1.jpg" alt="Portfolio Item 1" />
+          </div>
+          <div class="portfolio-item">
+            <img src="./images/portfolio2.jpg" alt="Portfolio Item 2" />
+          </div>
+          <div class="portfolio-item">
+            <img src="./images/portfolio3.jpg" alt="Portfolio Item 3" />
+          </div>
+          <div class="portfolio-item">
+            <img src="./images/portfolio4.jpg" alt="Portfolio Item 4" />
+          </div>
+          <div class="portfolio-item">
+            <img src="./images/portfolio5.jpg" alt="Portfolio Item 5" />
+          </div>
+        </div>
+      </section>
+
+      <section class="experiences-section" id="experiences">
+        <div class="experiences-header">
+          <h2>My <strong>Experiences</strong></h2>
+          <p>
+            There are many variations of passages of Lorem Ipsum<br />
+            available, but the majority have suffered alteration in some form,
+            by injected humour.
+          </p>
+        </div>
+        <div class="experiences-container">
+          <div class="experience-card">
+            <h4>June-2002 - 2020</h4>
+            <h3><strong>UX/UI Designer</strong></h3>
+            <h5>Figma</h5>
+            <p>
+              There are many variations of passages of Lorem Ipsum available,
+              but the majority have suffered alteration in some.
+            </p>
+          </div>
+          <div class="experience-card">
+            <h4>June-2002 - 2020</h4>
+            <h3><strong>Product Designer</strong></h3>
+            <h5>Adobe Photoshop</h5>
+            <p>
+              There are many variations of<br />
+              passages of Lorem Ipsum available<br />, but the majority have
+              suffered<br />
+              alteration in some.
+            </p>
+          </div>
+          <div class="experience-card">
+            <h4>June-2002 - 2020</h4>
+            <h3><strong>Graphic Designer</strong></h3>
+            <h5>Adobe Photoshop</h5>
+            <p>
+              There are many variations of passages of Lorem Ipsum available,
+              but the majority have suffered alteration in some.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact-section" id="contact">
+        <div class="contact-header">
+          <h2>Contact <strong>Me</strong></h2>
+          <p>
+            There are many variations of passages of Lorem Ipsum available, but
+            the majority have suffered alteration in some form, by injected
+            humour.
+          </p>
+        </div>
+        <div class="contact-content">
+          <div class="contact-info">
+            <p><strong>Address:</strong> 23 S 80 Road, Benedic1, ne, 68516<br />United States</p>
+            <p><strong>Phone:</strong> +01 123 456 789</p>
+            <p><strong>Email:</strong> abc.xyz@gmail.com</p>
+            <p><strong>Website:</strong> www.abc.xyz.com</p>
+          </div>
+          <div class="contact-form">
+            <input type="text" placeholder="Name" />
+            <textarea placeholder="Message"></textarea>
+            <button class="contact-btn">Contact us</button>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer-section">
+        <h2>AboutMe.</h2>
         <p>
           There are many variations of passages of Lorem Ipsum available, but
-          the majority have suffered alteration in some form, by injected
-          humour,
+          the majority have suffered alteration in some form.
         </p>
-        <button class="contact-btn">Contact us</button>
-      </div>
-      <div class="image">
-        <img src="./image/my_image.jpg" alt="My image" />
-      </div>
-    </section>
-    <section class="about-section">
-      <div class="about-image">
-        <img src="./image/about_image.png" alt="Like Image" />
-      </div>
-      <div class="about-content">
-        <h2>About <strong>Me</strong></h2>
-        <p>
-          There are many variations of passages of Lorem Ipsum available, but
-          the majority have suffered alteration in some form, by injected
-          humour.
-        </p>
-        <p>
-          Passages of Lorem Ipsum available, but the majority have suffered
-          alteration in some form, by injected humour.
-        </p>
-        <button class="contact-btn">Contact us</button>
-      </div>
-    </section>
-    <div class="services-header">
-      <h2>My <strong>Service</strong></h2>
-      <p>
-        There are many variations of passages of Lorem Ipsum available, but the
-        majority have suffered alteration in some form, by injected humour.
-      </p>
-    </div>
-    <section class="services-section">
-      <div class="services-container">
-        <div class="service-card">
-          <i class="service-icon">📣</i>
-          <h3>Digital Marketing</h3>
-          <p>
-            There are many variations of passages of Lorem Ipsum available, but
-            the majority have suffered alteration in some form.
-          </p>
+        <div class="social-icons">
+          <a href="#" class="fab fa-facebook-f"></a>
+          <a href="#" class="fab fa-twitter"></a>
+          <a href="#" class="fab fa-linkedin-in"></a>
+          <a href="#" class="fab fa-youtube"></a>
+          <a href="#" class="fab fa-instagram"></a>
         </div>
-        <div class="service-card">
-          <i class="service-icon">💻</i>
-          <h3>Web Development</h3>
-          <p>
-            There are many variations of passages of Lorem Ipsum available, but
-            the majority have suffered alteration in some form.
-          </p>
-        </div>
-        <div class="service-card">
-          <i class="service-icon">🎨</i>
-          <h3>Creative Graphic Design</h3>
-          <p>
-            There are many variations of passages of Lorem Ipsum available, but
-            the majority have suffered alteration in some form.
-          </p>
-        </div>
-      </div>
-    </section>
+      </footer>
+    </main>
   </body>
 </html>
